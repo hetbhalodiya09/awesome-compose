@@ -83,3 +83,4 @@ Removing react-java-mysql-frontend-1 ... done
 Removing react-java-mysql-db-1       ... done
 Removing network react-java-mysql-default
 ```
+# Trigger workflow
