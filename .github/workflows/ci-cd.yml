@@ -29,11 +29,6 @@ jobs:
           distribution: temurin
           java-version: '17'
 
-      - name: Install Maven
-        run: |
-          apt-get update
-          apt-get install -y maven
-
       - name: Build backend
         run: |
           cd backend
@@ -59,7 +54,7 @@ jobs:
       - name: Stop existing containers
         run: docker compose down || true
 
-      - name: Deploy application locally
+      - name: Deploy application
         run: docker compose up -d
 
       - name: Verify deployment
